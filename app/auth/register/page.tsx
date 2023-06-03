@@ -41,7 +41,7 @@ export default function Page() {
         "/auth/register",
         inputValue
       );
-      if (response.status === 200) router.push("/auth/login");
+      if (response.status === 200) router.push("/movies");
     } catch (error) {
       setInputErros(error.response?.data.msg)
     }
