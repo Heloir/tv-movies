@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #121214;
+}
+.title{
+  color: white;
+}
+.loading-container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detailsButton{
+  display: none;
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  left: 38%;
+  z-index: 2;
+}
+
+.MoviesCarousel::-webkit-scrollbar {
+  width: 12px;
+  height: 10px;
+}
+
+.MoviesCarousel::-webkit-scrollbar-thumb {
+  background-color: orange;
+  border-radius: 10px;
+}
