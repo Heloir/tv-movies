@@ -27,7 +27,7 @@ export default function Movie(props: IMoviesMaps) {
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: "270px", height: "auto", borderRadius: "10px" }}
+                style={{ width: "auto", height: "auto", borderRadius: "10px" }}
                 loading="lazy"
               />
           </ImageContainer>

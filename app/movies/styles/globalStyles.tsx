@@ -4,14 +4,14 @@ import styled from "styled-components";
 
 export const Header = styled.div`
   position: relative;
-  
-  &::after{
+
+  &::after {
     position: absolute;
     z-index: 2;
     top: 0;
     width: 100%;
     height: 100%;
-    content: '';
+    content: "";
     background-color: #00000083;
   }
 `;
@@ -27,24 +27,24 @@ export const HeaderContainer = styled.div`
   }
 
   @media (max-width: 800px) {
-    height: 100%;
+    height: 300px;
   }
 `;
 
 export const PageDetailsHeader = styled.div`
-    position: relative;
-  
-  &::after{
+  position: relative;
+
+  &::after {
     position: absolute;
     z-index: 2;
     top: 0;
     width: 100%;
     height: 100%;
-    content: '';
+    content: "";
     background-color: #00000083;
     box-shadow: inset 0px -300px 200px 0px #000000;
   }
-`
+`;
 
 export const FilmTexts = styled.div`
   display: flex;
@@ -63,15 +63,23 @@ export const FilmTexts = styled.div`
 export const FilmTitle = styled.h1`
   font-weight: bold;
   font-size: 35px;
+
+  @media (max-width: 800px) {
+    font-size: 20px;
+  }
 `;
 
 export const FilmDecription = styled.p`
   font-weight: bold;
   font-size: 15px;
+
+  @media (max-width: 800px) {
+    font-size: 10px;
+  }
 `;
 
 export const MoreButton = styled.button`
-  padding: 10px;
+  height: 40px;
   width: 150px;
   background-color: transparent;
   color: white;
@@ -81,7 +89,13 @@ export const MoreButton = styled.button`
   transition: 0.5s;
   cursor: pointer;
 
-  &:hover{
-  background-color: orange;
+  &:hover {
+    background-color: orange;
+  }
+
+  @media (max-width: 800px) {
+    height: 30px;
+    width: 90px;
+    font-size: 10px;
   }
 `;

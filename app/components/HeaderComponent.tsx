@@ -26,7 +26,7 @@ export default function Header() {
         </h1>
 
         <Link href={"/auth/register"}>
-          <Button>CADRASTAR</Button>
+          <Button>CADRASTRAR</Button>
         </Link>
       </HeaderContent>
     </Main>
